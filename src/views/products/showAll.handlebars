@@ -1,0 +1,25 @@
+<main class="container d-flex w-75">
+
+  {{#each products}}
+    <article class="card d-flex flex-column w-25 m-4">
+
+      <img src="{{ image }}" alt="Foto do produto" class="card-img-top h-100">
+
+      <div class="d-flex flex-column p-2">
+        <a href="/products/select/{{ _id }}" class="card-title">{{ name }}</a>
+        <p class="card-text text-success align-self-end">R$ {{ price }}</p>
+      </div>
+
+    </article>
+
+  {{else}}
+
+    <article class="border rounded m-auto mt-4 p-4 pt-2 pb-2 w-50">
+        <h1>Ops...</h1>
+        <p>Nemhum produto foi encontrado.</p>
+    </article>
+
+  {{/each}}
+  
+</main>
+

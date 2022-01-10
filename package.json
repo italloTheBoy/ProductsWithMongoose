@@ -1,0 +1,19 @@
+{
+  "name": "mongo",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
